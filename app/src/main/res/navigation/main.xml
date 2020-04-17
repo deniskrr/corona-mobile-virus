@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.deniskrr.coronamobilevirus.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_fakeLoginFragment"
+            app:destination="@id/fakeLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fakeLoginFragment"
+        android:name="com.deniskrr.coronamobilevirus.FakeLoginFragment"
+        android:label="fake_login_fragment"
+        tools:layout="@layout/fake_login_fragment" />
+</navigation>
