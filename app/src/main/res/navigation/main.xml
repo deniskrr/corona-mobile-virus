@@ -12,25 +12,34 @@
         tools:layout="@layout/home_fragment" >
         <action
             android:id="@+id/action_home_to_fakeLogin"
-            app:destination="@id/fakeLogin"
+            app:destination="@id/fakeLoginEmail"
             app:enterAnim="@anim/fragment_open_enter"
             app:exitAnim="@anim/fragment_open_exit"
             app:popEnterAnim="@anim/fragment_close_enter"
             app:popExitAnim="@anim/fragment_close_exit" />
     </fragment>
     <fragment
-        android:id="@+id/fakeLogin"
+        android:id="@+id/fakeLoginEmail"
         android:name="com.deniskrr.coronamobilevirus.FakeLoginEmailFragment"
         android:label="fake_login_fragment"
         tools:layout="@layout/fake_login_email_fragment" >
         <action
             android:id="@+id/action_email_to_password"
-            app:destination="@id/fakeLoginPasswordFragment"
+            app:destination="@+id/fakeLoginPassword"
             app:enterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit" />
     </fragment>
     <fragment
-        android:id="@+id/fakeLoginPasswordFragment"
+        android:id="@+id/fakeLoginPassword"
         android:name="com.deniskrr.coronamobilevirus.FakeLoginPasswordFragment"
-        android:label="FakeLoginPasswordFragment" />
+        android:label="FakeLoginPasswordFragment">
+        <action
+            android:id="@+id/action_fakeLoginPassword_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.deniskrr.coronamobilevirus.DashboardFragment"
+        android:label="dashboard_fragment"
+        tools:layout="@layout/dashboard_fragment" />
 </navigation>

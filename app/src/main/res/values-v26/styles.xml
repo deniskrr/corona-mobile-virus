@@ -11,8 +11,5 @@
         <!-- V26-->
         <item name="android:autofilledHighlight">@android:color/transparent</item>
 
-        <!-- V27-->
-        <item name="android:navigationBarColor">#FFF</item>
-        <item name="android:windowLightNavigationBar">true</item>
     </style>
 </resources>

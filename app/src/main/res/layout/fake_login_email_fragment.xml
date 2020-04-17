@@ -82,25 +82,32 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_email_login"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
             android:hint="Email or phone"
+            app:boxStrokeErrorColor="#D93024"
             app:boxStrokeWidth="0.5dp"
             app:errorEnabled="false"
+            app:errorIconDrawable="@null"
+            app:errorTextColor="#D93024"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_google_account_login">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_email_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:inputType="textEmailAddress"
                 android:paddingStart="16dp"
                 android:paddingTop="18dp"
-                android:paddingBottom="18dp" />
+                android:paddingBottom="18dp"
+                android:text="@={viewModel.email}" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
