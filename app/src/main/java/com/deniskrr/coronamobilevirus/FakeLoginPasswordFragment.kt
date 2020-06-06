@@ -53,18 +53,13 @@ class FakeLoginPasswordFragment : Fragment() {
             if (password.length < 6) {
                 binding.inputPasswordLogin.error =
                     "Wrong password. Try again or click Forgot password to reset it."
-
-                val action = FakeLoginEmailFragmentDirections.actionEmailToPassword()
-                findNavController().navigate(action)
             } else if (!viewModel.wasPasswordChecked) {
                 binding.inputPasswordLogin.error =
                     "Wrong password. Try again or click Forgot password to reset it."
 
                 viewModel.wasPasswordChecked = true
             } else {
-                val action =
-                    FakeLoginPasswordFragmentDirections.actionFakeLoginPasswordToDashboard()
-                findNavController().navigate(action)
+                findNavController().navigate(R.id.action_fakeLoginPassword_to_dashboard)
             }
         }, 1400)
     }

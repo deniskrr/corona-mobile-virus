@@ -69,8 +69,7 @@ class FakeLoginEmailFragment : Fragment() {
                     emailOrPhoneNumber
                 )
             ) {
-                val action = FakeLoginEmailFragmentDirections.actionEmailToPassword()
-                findNavController().navigate(action)
+                findNavController().navigate(R.id.action_email_to_password)
             } else {
                 binding.inputEmailLogin.error = "Enter a valid email or phone number"
             }

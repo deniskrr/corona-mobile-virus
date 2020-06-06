@@ -1,15 +1,13 @@
 package com.deniskrr.coronamobilevirus
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.deniskrr.coronamobilevirus.databinding.HomeFragmentBinding
-
 
 class HomeFragment : Fragment() {
 
@@ -23,8 +21,7 @@ class HomeFragment : Fragment() {
         binding = HomeFragmentBinding.inflate(inflater)
 
         binding.btnLoginHome.setOnClickListener {
-            val action = HomeFragmentDirections.actionHomeToFakeLogin()
-            findNavController().navigate(action)
+            findNavController().navigate(R.id.action_home_to_fakeLogin)
         }
 
         binding.viewModel = viewModel
