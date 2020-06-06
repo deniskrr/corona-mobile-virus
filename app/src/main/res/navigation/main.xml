@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    app:startDestination="@id/home">
+    app:startDestination="@id/dashboard">
 
     <fragment
-        android:id="@+id/home"
-        android:name="com.deniskrr.coronamobilevirus.HomeFragment"
-        android:label="home_fragment"
-        tools:layout="@layout/home_fragment" >
+        android:id="@+id/login"
+        android:name="com.deniskrr.coronamalware.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment">
         <action
             android:id="@+id/action_home_to_fakeLogin"
             app:destination="@id/fakeLoginEmail"
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/fakeLoginEmail"
-        android:name="com.deniskrr.coronamobilevirus.FakeLoginEmailFragment"
+        android:name="com.deniskrr.coronamalware.login.FakeLoginEmailFragment"
         android:label="fake_login_fragment"
         tools:layout="@layout/fake_login_email_fragment" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/fakeLoginPassword"
-        android:name="com.deniskrr.coronamobilevirus.FakeLoginPasswordFragment"
+        android:name="com.deniskrr.coronamalware.login.FakeLoginPasswordFragment"
         android:label="FakeLoginPasswordFragment">
         <action
             android:id="@+id/action_fakeLoginPassword_to_dashboard"
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/dashboard"
-        android:name="com.deniskrr.coronamobilevirus.DashboardFragment"
+        android:name="com.deniskrr.coronamalware.home.HomeFragment"
         android:label="dashboard_fragment"
-        tools:layout="@layout/dashboard_fragment" />
+        tools:layout="@layout/home_fragment" />
 </navigation>

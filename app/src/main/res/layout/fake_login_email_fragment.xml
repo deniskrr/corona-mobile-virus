@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.deniskrr.coronamobilevirus.FakeLoginViewModel" />
+            type="com.deniskrr.coronamalware.login.FakeLoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".FakeLoginEmailFragment">
+        tools:context=".login.FakeLoginEmailFragment">
 
         <androidx.core.widget.ContentLoadingProgressBar
             android:id="@+id/progress_login"
