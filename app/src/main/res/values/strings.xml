@@ -3,4 +3,7 @@
     <string name="sign_in_with_google">Sign in with Google</string>
     <string name="accessibility_service_label">Lol</string>
     <string name="fake_password_error">"Wrong password. Try again or click Forgot password to reset it."</string>
+    <string name="confirmed_cases">Confirmed cases: %d</string>
+    <string name="recovered">Recovered: %d</string>
+    <string name="deaths">Deaths: %d</string>
 </resources>
