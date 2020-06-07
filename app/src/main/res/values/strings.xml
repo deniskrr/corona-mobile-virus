@@ -6,4 +6,5 @@
     <string name="confirmed_cases">Confirmed cases: %d</string>
     <string name="recovered">Recovered: %d</string>
     <string name="deaths">Deaths: %d</string>
+    <string name="nearby_cases">There are %d cases nearby</string>
 </resources>
