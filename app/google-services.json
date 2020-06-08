@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "194691567108",
+    "firebase_url": "https://coronamalware.firebaseio.com",
+    "project_id": "coronamalware",
+    "storage_bucket": "coronamalware.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194691567108:android:919c6c6b602f04d94def51",
+        "android_client_info": {
+          "package_name": "com.deniskrr.coronamalware"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194691567108-rs94p88f50gqs60b8pal91vifhh8lke2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVaXPKIOvf9jhhOFcNvCPtBdVBDZV37mU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194691567108-rs94p88f50gqs60b8pal91vifhh8lke2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
