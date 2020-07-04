@@ -7,14 +7,14 @@
 
         <variable
             name="viewModel"
-            type="com.deniskrr.coronamalware.home.GlobalViewModel" />
+            type="com.deniskrr.coronamalware.global.GlobalViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".home.GlobalFragment">
+        tools:context=".global.GlobalFragment">
 
         <com.github.mikephil.charting.charts.HorizontalBarChart
             android:id="@+id/horizontalBarChart"
@@ -29,10 +29,10 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_marginTop="112dp"
-            android:src="@drawable/logo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/ic_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

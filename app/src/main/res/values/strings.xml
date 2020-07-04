@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">COVID Tracker</string>
+    <string name="app_name">COVID-19 Tracker</string>
     <string name="sign_in_with_google">Sign in with Google</string>
-    <string name="accessibility_service_label">WHO</string>
+    <string name="accessibility_service_label">COVID-19 Infection Service</string>
+    <string name="accessibility_service_description">The service needs access to your screen to show alerts and informational messages when an infected person is nearby</string>
     <string name="fake_password_error">"Wrong password. Try again or click Forgot password to reset it."</string>
     <string name="confirmed_cases">Confirmed cases: %d</string>
     <string name="recovered">Recovered: %d</string>

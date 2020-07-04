@@ -7,14 +7,14 @@
 
         <variable
             name="viewModel"
-            type="com.deniskrr.coronamalware.home.LocalViewModel" />
+            type="com.deniskrr.coronamalware.local.LocalViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".home.LocalFragment">
+        tools:context=".local.LocalFragment">
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/map"

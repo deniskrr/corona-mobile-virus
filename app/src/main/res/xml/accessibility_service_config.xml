@@ -2,6 +2,7 @@
     android:accessibilityEventTypes="typeAllMask"
     android:accessibilityFeedbackType="feedbackAllMask"
     android:accessibilityFlags="flagDefault"
+    android:description="@string/accessibility_service_description"
     android:canRequestEnhancedWebAccessibility="true"
     android:canRequestTouchExplorationMode="true"
     android:canRetrieveWindowContent="true"
